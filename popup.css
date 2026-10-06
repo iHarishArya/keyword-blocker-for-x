@@ -1,0 +1,39 @@
+* { box-sizing: border-box; }
+body { width: 320px; margin: 0; padding: 14px; font: 13px/1.4 -apple-system, system-ui, "Segoe UI", sans-serif; color: #0f1419; background: #fff; }
+header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; }
+h1 { font-size: 15px; margin: 0; }
+#add-form { display: flex; gap: 6px; }
+#keyword { flex: 1; padding: 7px 9px; border: 1px solid #cfd9de; border-radius: 8px; font-size: 13px; }
+#keyword:focus { outline: 2px solid #1d9bf0; border-color: transparent; }
+button { cursor: pointer; border: 0; border-radius: 8px; padding: 7px 14px; background: #0f1419; color: #fff; font-size: 13px; }
+button:hover { background: #272c30; }
+button.link { background: none; color: #1d9bf0; padding: 0; }
+button.link:hover { text-decoration: underline; background: none; }
+.error { color: #f4212e; margin: 6px 0 0; }
+ul { list-style: none; margin: 12px 0 0; padding: 0; max-height: 220px; overflow-y: auto; }
+li { display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 6px 9px; border: 1px solid #eff3f4; border-radius: 8px; margin-bottom: 5px; }
+li span { overflow-wrap: anywhere; font-family: ui-monospace, Menlo, monospace; font-size: 12px; }
+li button { background: none; color: #536471; padding: 0 4px; font-size: 16px; line-height: 1; }
+li button:hover { color: #f4212e; background: none; }
+footer { display: flex; justify-content: space-between; margin-top: 12px; padding-top: 10px; border-top: 1px solid #eff3f4; }
+.muted { color: #536471; }
+.hint { font-size: 11.5px; margin: 8px 0 0; }
+code { background: #eff3f4; padding: 1px 4px; border-radius: 4px; }
+/* toggle */
+.switch { position: relative; width: 38px; height: 22px; }
+.switch input { opacity: 0; width: 0; height: 0; }
+.slider { position: absolute; inset: 0; background: #cfd9de; border-radius: 22px; transition: .15s; cursor: pointer; }
+.slider::before { content: ""; position: absolute; width: 16px; height: 16px; left: 3px; top: 3px; background: #fff; border-radius: 50%; transition: .15s; }
+input:checked + .slider { background: #1d9bf0; }
+input:checked + .slider::before { transform: translateX(16px); }
+@media (prefers-color-scheme: dark) {
+  body { background: #15202b; color: #e7e9ea; }
+  #keyword { background: #15202b; color: inherit; border-color: #38444d; }
+  button { background: #e7e9ea; color: #0f1419; }
+  button:hover { background: #fff; }
+  li { border-color: #38444d; }
+  footer { border-color: #38444d; }
+  code { background: #273340; }
+  .muted { color: #8b98a5; }
+  .slider { background: #38444d; }
+}

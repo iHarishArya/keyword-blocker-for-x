@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header>
+    <h1>X Keyword Blocker</h1>
+    <label class="switch" title="Enable / disable">
+      <input type="checkbox" id="enabled">
+      <span class="slider"></span>
+    </label>
+  </header>
+
+  <form id="add-form">
+    <input id="keyword" type="text" placeholder="keyword, phrase, or /regex/i" autocomplete="off" autofocus>
+    <button type="submit">Add</button>
+  </form>
+  <p id="error" class="error" hidden></p>
+
+  <ul id="list"></ul>
+  <p id="empty" class="muted">No keywords yet. Add one above.</p>
+
+  <footer>
+    <span class="muted">Hidden so far: <strong id="count">0</strong></span>
+    <button id="reset" class="link">Reset count</button>
+  </footer>
+  <p class="hint muted">Plain text is matched case-insensitively. Wrap in slashes for regex, e.g. <code>/\b(spoiler|leak)s?\b/</code></p>
+
+  <script src="popup.js"></script>
+</body>
+</html>
