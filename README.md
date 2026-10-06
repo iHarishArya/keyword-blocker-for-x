@@ -27,6 +27,4 @@ Keyword Filter for X Timeline does not collect, transmit, sell, or share any per
 - **Network requests:** none.
 - **Third parties:** none.
 
-Contact: aryaharish28@gmail.com
-
 *Not affiliated with, endorsed by, or sponsored by X Corp.*
