@@ -15,7 +15,7 @@ A Chrome extension that hides posts on your X (Twitter) timeline when they match
 3. Click **Load unpacked** and select this folder.
 
 ## Support
-Found a bug, or X changed its layout and posts are no longer hidden? Please open an issue on the **Issues** tab of this repository, or email aryaharish28@gmail.com.
+Found a bug, or X changed its layout and posts are no longer hidden? Please open an issue on the **Issues** tab of this repository
 
 ## Privacy Policy
 Last updated: 2026-10-06
